@@ -3051,12 +3051,12 @@ form textarea:required:valid {
   padding-left: 2rem;
 }
 .logo__caption p {
-  font: normal 700 2.6rem/1.06 var(--_font-accent);
+  font: normal 700 2.4rem/1.06 var(--_font-accent);
   color: var(--t-bright);
 }
 @media only screen and (min-width: 1400px) {
   .logo__caption p {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 
