@@ -4278,3 +4278,61 @@ form textarea:required:valid {
 /* ------------------------------------------------*/
 /* Features Socials End */
 /* ------------------------------------------------*/
+
+//subheading  
+.subhead {
+  position: relative;
+  font-family: var(--_font-default); /* Your font family */
+  text-transform: uppercase;
+  font-size: 2rem; /* Adjust size as needed */
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shimmer 24s ease-in-out infinite; /* Total animation cycle is now 24s */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Transparent text for the gradient */
+  color: transparent; /* Keep the text transparent so the gradient shows */
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200%; /* Starting position */
+  }
+  40% {
+    background-position: 200%; /* End of shimmer movement */
+  }
+  40.1% {
+    background-position: 200%; /* Hold shimmer for 12 seconds */
+  }
+  100% {
+    background-position: -200%; /* Reset to starting position */
+  }
+}
+
+/* Light theme adjustments */
+body.light-theme .subhead {
+  background: linear-gradient(90deg, #333, #fff, #333); /* Darker gradient for light theme */
+}
+
+/* Optional: Adjust text size and responsiveness */
+@media only screen and (min-width: 768px) {
+  .subhead {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .subhead {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .subhead {
+    font-size: 3rem;
+  }
+} 
+// subheading end
